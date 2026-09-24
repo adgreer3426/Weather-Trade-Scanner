@@ -1,0 +1,17 @@
+# Kalshi 99c ask alert -- runs 4x/day: 6:00am, 10:15am, 3:00pm, 5:00pm Central.
+#
+# Install with: crontab -e   (as the user that should own this job)
+# then paste the lines below, adjusting the path to run_99_ask_alert.sh.
+#
+# Requires msmtp/mailutils already configured per HomeNAS_Setup_Guide.md
+# section 9.4 -- same mail pipeline smartd already uses for SMART alerts.
+#
+# CRON_TZ is honored by Debian's cron (since the cron package version
+# shipped in Debian 10+). If your crontab is silently running at the wrong
+# time, your cron doesn't support CRON_TZ -- convert the hours below to
+# your server's local time (or UTC) instead.
+CRON_TZ=America/Chicago
+0  6  * * * /home/YOUR_USER/kalshi_weather_ladder/run_99_ask_alert.sh >> /var/log/kalshi_99_alert.log 2>&1
+15 10 * * * /home/YOUR_USER/kalshi_weather_ladder/run_99_ask_alert.sh >> /var/log/kalshi_99_alert.log 2>&1
+0  15 * * * /home/YOUR_USER/kalshi_weather_ladder/run_99_ask_alert.sh >> /var/log/kalshi_99_alert.log 2>&1
+0  17 * * * /home/YOUR_USER/kalshi_weather_ladder/run_99_ask_alert.sh >> /var/log/kalshi_99_alert.log 2>&1
