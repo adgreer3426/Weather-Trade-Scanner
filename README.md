@@ -52,6 +52,24 @@ python3 kalshi_weather_ladder_scanner.py --demo
 
 Run it any time — via cron, or by hand — to check current ladders.
 
+### Historical forecast accuracy ("Hist acc" column)
+
+For each row the scanner shows which forecast source has been most
+accurate for that city and contract type (high or low) over the last 180
+days, e.g. `NWS 1.4° 66%` = NWS averaged 1.4°F off and was within ±1°F on
+66% of days. Accuracy is scored day-ahead against the NWS Daily Climate
+Report, the source Kalshi settles on.
+
+The stats live in `data/forecast_accuracy.json` and are rebuilt by:
+
+```
+python3 forecast_accuracy.py          # incremental (last ~2 weeks)
+python3 forecast_accuracy.py --full   # rebuild the whole 180-day window
+```
+
+The "Forecast accuracy refresh" GitHub Actions workflow runs this weekly
+and commits `data/`.
+
 ### If Kalshi changes ticker naming
 
 The script auto-discovers weather series from Kalshi's `/series` endpoint

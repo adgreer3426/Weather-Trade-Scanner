@@ -1,0 +1,1963 @@
+{
+ "generated": "2026-09-27T21:50:26+00:00",
+ "stations": {
+  "KATL": {
+   "high": {
+    "best": "NWS",
+    "sources": {
+     "ECMWF": {
+      "bias": -1.79,
+      "mae": 2.43,
+      "n": 179,
+      "within1": 0.352,
+      "within2": 0.581
+     },
+     "GEM": {
+      "bias": -3.63,
+      "mae": 4.02,
+      "n": 174,
+      "within1": 0.161,
+      "within2": 0.305
+     },
+     "GFS": {
+      "bias": 1.15,
+      "mae": 2.8,
+      "n": 179,
+      "within1": 0.313,
+      "within2": 0.503
+     },
+     "NWS": {
+      "bias": -0.25,
+      "mae": 1.84,
+      "n": 179,
+      "within1": 0.503,
+      "within2": 0.743
+     },
+     "OM": {
+      "bias": -0.36,
+      "mae": 2.17,
+      "n": 179,
+      "within1": 0.458,
+      "within2": 0.637
+     }
+    }
+   },
+   "low": {
+    "best": "NWS",
+    "sources": {
+     "ECMWF": {
+      "bias": -1.69,
+      "mae": 2.13,
+      "n": 179,
+      "within1": 0.369,
+      "within2": 0.665
+     },
+     "GEM": {
+      "bias": -1.95,
+      "mae": 2.61,
+      "n": 174,
+      "within1": 0.333,
+      "within2": 0.575
+     },
+     "GFS": {
+      "bias": 0.42,
+      "mae": 2.15,
+      "n": 179,
+      "within1": 0.419,
+      "within2": 0.62
+     },
+     "NWS": {
+      "bias": -0.4,
+      "mae": 1.66,
+      "n": 179,
+      "within1": 0.503,
+      "within2": 0.782
+     },
+     "OM": {
+      "bias": -1.43,
+      "mae": 2.02,
+      "n": 179,
+      "within1": 0.464,
+      "within2": 0.698
+     }
+    }
+   }
+  },
+  "KAUS": {
+   "high": {
+    "best": "NWS",
+    "sources": {
+     "ECMWF": {
+      "bias": -1.27,
+      "mae": 2.21,
+      "n": 180,
+      "within1": 0.4,
+      "within2": 0.628
+     },
+     "GEM": {
+      "bias": -1.55,
+      "mae": 3.19,
+      "n": 174,
+      "within1": 0.259,
+      "within2": 0.471
+     },
+     "GFS": {
+      "bias": 1.03,
+      "mae": 2.43,
+      "n": 180,
+      "within1": 0.372,
+      "within2": 0.533
+     },
+     "NWS": {
+      "bias": -0.07,
+      "mae": 1.83,
+      "n": 180,
+      "within1": 0.533,
+      "within2": 0.756
+     },
+     "OM": {
+      "bias": -1.57,
+      "mae": 2.32,
+      "n": 180,
+      "within1": 0.394,
+      "within2": 0.639
+     }
+    }
+   },
+   "low": {
+    "best": "GEM",
+    "sources": {
+     "ECMWF": {
+      "bias": 2.01,
+      "mae": 2.68,
+      "n": 180,
+      "within1": 0.372,
+      "within2": 0.528
+     },
+     "GEM": {
+      "bias": 0.97,
+      "mae": 1.98,
+      "n": 174,
+      "within1": 0.437,
+      "within2": 0.701
+     },
+     "GFS": {
+      "bias": -0.09,
+      "mae": 2.62,
+      "n": 180,
+      "within1": 0.328,
+      "within2": 0.533
+     },
+     "NWS": {
+      "bias": 2.17,
+      "mae": 2.93,
+      "n": 180,
+      "within1": 0.328,
+      "within2": 0.467
+     },
+     "OM": {
+      "bias": 1.49,
+      "mae": 2.31,
+      "n": 180,
+      "within1": 0.361,
+      "within2": 0.589
+     }
+    }
+   }
+  },
+  "KBOS": {
+   "high": {
+    "best": "OM",
+    "sources": {
+     "ECMWF": {
+      "bias": -0.36,
+      "mae": 2.6,
+      "n": 179,
+      "within1": 0.313,
+      "within2": 0.587
+     },
+     "GEM": {
+      "bias": -5.56,
+      "mae": 5.82,
+      "n": 174,
+      "within1": 0.161,
+      "within2": 0.276
+     },
+     "GFS": {
+      "bias": -3.04,
+      "mae": 3.72,
+      "n": 179,
+      "within1": 0.184,
+      "within2": 0.38
+     },
+     "NWS": {
+      "bias": -0.36,
+      "mae": 2.77,
+      "n": 179,
+      "within1": 0.335,
+      "within2": 0.514
+     },
+     "OM": {
+      "bias": -0.73,
+      "mae": 2.41,
+      "n": 179,
+      "within1": 0.436,
+      "within2": 0.631
+     }
+    }
+   },
+   "low": {
+    "best": "ECMWF",
+    "sources": {
+     "ECMWF": {
+      "bias": -0.28,
+      "mae": 1.94,
+      "n": 179,
+      "within1": 0.475,
+      "within2": 0.743
+     },
+     "GEM": {
+      "bias": -0.68,
+      "mae": 2.05,
+      "n": 174,
+      "within1": 0.489,
+      "within2": 0.707
+     },
+     "GFS": {
+      "bias": -0.82,
+      "mae": 1.94,
+      "n": 179,
+      "within1": 0.475,
+      "within2": 0.693
+     },
+     "NWS": {
+      "bias": 0.11,
+      "mae": 2.04,
+      "n": 179,
+      "within1": 0.469,
+      "within2": 0.721
+     },
+     "OM": {
+      "bias": -2.31,
+      "mae": 2.69,
+      "n": 179,
+      "within1": 0.341,
+      "within2": 0.503
+     }
+    }
+   }
+  },
+  "KDCA": {
+   "high": {
+    "best": "NWS",
+    "sources": {
+     "ECMWF": {
+      "bias": 0.17,
+      "mae": 2.5,
+      "n": 180,
+      "within1": 0.372,
+      "within2": 0.572
+     },
+     "GEM": {
+      "bias": -1.19,
+      "mae": 3.26,
+      "n": 175,
+      "within1": 0.354,
+      "within2": 0.526
+     },
+     "GFS": {
+      "bias": 0.53,
+      "mae": 2.56,
+      "n": 180,
+      "within1": 0.383,
+      "within2": 0.567
+     },
+     "NWS": {
+      "bias": -0.18,
+      "mae": 2.06,
+      "n": 180,
+      "within1": 0.439,
+      "within2": 0.689
+     },
+     "OM": {
+      "bias": 1.06,
+      "mae": 2.39,
+      "n": 180,
+      "within1": 0.406,
+      "within2": 0.606
+     }
+    }
+   },
+   "low": {
+    "best": "ECMWF",
+    "sources": {
+     "ECMWF": {
+      "bias": -0.53,
+      "mae": 1.73,
+      "n": 180,
+      "within1": 0.522,
+      "within2": 0.717
+     },
+     "GEM": {
+      "bias": -0.86,
+      "mae": 2.75,
+      "n": 175,
+      "within1": 0.297,
+      "within2": 0.543
+     },
+     "GFS": {
+      "bias": -0.83,
+      "mae": 2.02,
+      "n": 180,
+      "within1": 0.439,
+      "within2": 0.7
+     },
+     "NWS": {
+      "bias": 0.2,
+      "mae": 1.99,
+      "n": 180,
+      "within1": 0.506,
+      "within2": 0.694
+     },
+     "OM": {
+      "bias": -1.67,
+      "mae": 2.34,
+      "n": 180,
+      "within1": 0.394,
+      "within2": 0.589
+     }
+    }
+   }
+  },
+  "KDEN": {
+   "high": {
+    "best": "NWS",
+    "sources": {
+     "ECMWF": {
+      "bias": -0.42,
+      "mae": 2.24,
+      "n": 180,
+      "within1": 0.494,
+      "within2": 0.661
+     },
+     "GEM": {
+      "bias": -1.06,
+      "mae": 2.21,
+      "n": 174,
+      "within1": 0.437,
+      "within2": 0.609
+     },
+     "GFS": {
+      "bias": 0.27,
+      "mae": 2.23,
+      "n": 180,
+      "within1": 0.439,
+      "within2": 0.678
+     },
+     "NWS": {
+      "bias": 0.11,
+      "mae": 2.01,
+      "n": 180,
+      "within1": 0.489,
+      "within2": 0.689
+     },
+     "OM": {
+      "bias": 0.88,
+      "mae": 2.02,
+      "n": 180,
+      "within1": 0.544,
+      "within2": 0.694
+     }
+    }
+   },
+   "low": {
+    "best": "NWS",
+    "sources": {
+     "ECMWF": {
+      "bias": 4.33,
+      "mae": 4.72,
+      "n": 180,
+      "within1": 0.167,
+      "within2": 0.294
+     },
+     "GEM": {
+      "bias": -1.54,
+      "mae": 3.48,
+      "n": 174,
+      "within1": 0.259,
+      "within2": 0.431
+     },
+     "GFS": {
+      "bias": 2.79,
+      "mae": 3.48,
+      "n": 180,
+      "within1": 0.25,
+      "within2": 0.433
+     },
+     "NWS": {
+      "bias": 1.63,
+      "mae": 2.84,
+      "n": 180,
+      "within1": 0.311,
+      "within2": 0.528
+     },
+     "OM": {
+      "bias": 2.38,
+      "mae": 3.15,
+      "n": 180,
+      "within1": 0.317,
+      "within2": 0.45
+     }
+    }
+   }
+  },
+  "KDFW": {
+   "high": {
+    "best": "NWS",
+    "sources": {
+     "ECMWF": {
+      "bias": -1.57,
+      "mae": 2.42,
+      "n": 180,
+      "within1": 0.394,
+      "within2": 0.622
+     },
+     "GEM": {
+      "bias": -1.9,
+      "mae": 2.85,
+      "n": 174,
+      "within1": 0.339,
+      "within2": 0.517
+     },
+     "GFS": {
+      "bias": 1.53,
+      "mae": 2.48,
+      "n": 180,
+      "within1": 0.356,
+      "within2": 0.583
+     },
+     "NWS": {
+      "bias": -0.08,
+      "mae": 1.96,
+      "n": 180,
+      "within1": 0.483,
+      "within2": 0.75
+     },
+     "OM": {
+      "bias": -0.87,
+      "mae": 2.05,
+      "n": 180,
+      "within1": 0.489,
+      "within2": 0.7
+     }
+    }
+   },
+   "low": {
+    "best": "NWS",
+    "sources": {
+     "ECMWF": {
+      "bias": 1.12,
+      "mae": 2.08,
+      "n": 180,
+      "within1": 0.45,
+      "within2": 0.683
+     },
+     "GEM": {
+      "bias": -0.79,
+      "mae": 2.22,
+      "n": 174,
+      "within1": 0.448,
+      "within2": 0.649
+     },
+     "GFS": {
+      "bias": 2.12,
+      "mae": 2.83,
+      "n": 180,
+      "within1": 0.322,
+      "within2": 0.5
+     },
+     "NWS": {
+      "bias": 0.38,
+      "mae": 1.67,
+      "n": 180,
+      "within1": 0.606,
+      "within2": 0.794
+     },
+     "OM": {
+      "bias": -1.02,
+      "mae": 1.81,
+      "n": 180,
+      "within1": 0.472,
+      "within2": 0.728
+     }
+    }
+   }
+  },
+  "KEWR": {
+   "high": {
+    "best": "NWS",
+    "sources": {
+     "ECMWF": {
+      "bias": -1.29,
+      "mae": 2.48,
+      "n": 180,
+      "within1": 0.383,
+      "within2": 0.594
+     },
+     "GEM": {
+      "bias": -3.57,
+      "mae": 4.09,
+      "n": 175,
+      "within1": 0.246,
+      "within2": 0.371
+     },
+     "GFS": {
+      "bias": -0.55,
+      "mae": 2.36,
+      "n": 180,
+      "within1": 0.422,
+      "within2": 0.611
+     },
+     "NWS": {
+      "bias": -0.05,
+      "mae": 2.13,
+      "n": 180,
+      "within1": 0.433,
+      "within2": 0.661
+     },
+     "OM": {
+      "bias": -0.39,
+      "mae": 2.25,
+      "n": 180,
+      "within1": 0.456,
+      "within2": 0.683
+     }
+    }
+   },
+   "low": {
+    "best": "ECMWF",
+    "sources": {
+     "ECMWF": {
+      "bias": 0.1,
+      "mae": 1.67,
+      "n": 180,
+      "within1": 0.517,
+      "within2": 0.783
+     },
+     "GEM": {
+      "bias": -0.79,
+      "mae": 2.06,
+      "n": 175,
+      "within1": 0.491,
+      "within2": 0.674
+     },
+     "GFS": {
+      "bias": 1.06,
+      "mae": 2.19,
+      "n": 180,
+      "within1": 0.417,
+      "within2": 0.622
+     },
+     "NWS": {
+      "bias": 1.19,
+      "mae": 2.32,
+      "n": 180,
+      "within1": 0.444,
+      "within2": 0.678
+     },
+     "OM": {
+      "bias": -2.13,
+      "mae": 2.54,
+      "n": 180,
+      "within1": 0.344,
+      "within2": 0.528
+     }
+    }
+   }
+  },
+  "KHOU": {
+   "high": {
+    "best": "OM",
+    "sources": {
+     "ECMWF": {
+      "bias": -2.02,
+      "mae": 2.69,
+      "n": 180,
+      "within1": 0.333,
+      "within2": 0.533
+     },
+     "GEM": {
+      "bias": -0.34,
+      "mae": 2.29,
+      "n": 174,
+      "within1": 0.466,
+      "within2": 0.644
+     },
+     "GFS": {
+      "bias": 1.73,
+      "mae": 2.57,
+      "n": 180,
+      "within1": 0.422,
+      "within2": 0.567
+     },
+     "OM": {
+      "bias": -0.24,
+      "mae": 2.23,
+      "n": 180,
+      "within1": 0.461,
+      "within2": 0.628
+     }
+    }
+   },
+   "low": {
+    "best": "ECMWF",
+    "sources": {
+     "ECMWF": {
+      "bias": -0.5,
+      "mae": 1.52,
+      "n": 180,
+      "within1": 0.594,
+      "within2": 0.822
+     },
+     "GEM": {
+      "bias": -1.6,
+      "mae": 2.52,
+      "n": 174,
+      "within1": 0.339,
+      "within2": 0.58
+     },
+     "GFS": {
+      "bias": 0.64,
+      "mae": 1.74,
+      "n": 180,
+      "within1": 0.494,
+      "within2": 0.767
+     },
+     "OM": {
+      "bias": -1.25,
+      "mae": 1.83,
+      "n": 180,
+      "within1": 0.406,
+      "within2": 0.761
+     }
+    }
+   }
+  },
+  "KLAS": {
+   "high": {
+    "best": "OM",
+    "sources": {
+     "ECMWF": {
+      "bias": -0.93,
+      "mae": 1.46,
+      "n": 180,
+      "within1": 0.594,
+      "within2": 0.889
+     },
+     "GEM": {
+      "bias": -2.26,
+      "mae": 2.66,
+      "n": 174,
+      "within1": 0.236,
+      "within2": 0.448
+     },
+     "GFS": {
+      "bias": -1.29,
+      "mae": 1.82,
+      "n": 180,
+      "within1": 0.406,
+      "within2": 0.794
+     },
+     "NWS": {
+      "bias": 0.09,
+      "mae": 1.29,
+      "n": 180,
+      "within1": 0.733,
+      "within2": 0.867
+     },
+     "OM": {
+      "bias": 0.11,
+      "mae": 1.23,
+      "n": 180,
+      "within1": 0.761,
+      "within2": 0.9
+     }
+    }
+   },
+   "low": {
+    "best": "NWS",
+    "sources": {
+     "ECMWF": {
+      "bias": -2.45,
+      "mae": 2.97,
+      "n": 180,
+      "within1": 0.178,
+      "within2": 0.361
+     },
+     "GEM": {
+      "bias": -13.17,
+      "mae": 13.18,
+      "n": 174,
+      "within1": 0.011,
+      "within2": 0.023
+     },
+     "GFS": {
+      "bias": 3.8,
+      "mae": 4.14,
+      "n": 180,
+      "within1": 0.206,
+      "within2": 0.328
+     },
+     "NWS": {
+      "bias": -0.79,
+      "mae": 2.1,
+      "n": 180,
+      "within1": 0.472,
+      "within2": 0.694
+     },
+     "OM": {
+      "bias": -4.34,
+      "mae": 4.41,
+      "n": 180,
+      "within1": 0.083,
+      "within2": 0.167
+     }
+    }
+   }
+  },
+  "KLAX": {
+   "high": {
+    "best": "GFS",
+    "sources": {
+     "ECMWF": {
+      "bias": 8.01,
+      "mae": 8.17,
+      "n": 180,
+      "within1": 0.056,
+      "within2": 0.1
+     },
+     "GEM": {
+      "bias": -0.9,
+      "mae": 1.97,
+      "n": 174,
+      "within1": 0.477,
+      "within2": 0.707
+     },
+     "GFS": {
+      "bias": -0.42,
+      "mae": 1.89,
+      "n": 180,
+      "within1": 0.439,
+      "within2": 0.739
+     },
+     "NWS": {
+      "bias": -0.13,
+      "mae": 1.97,
+      "n": 180,
+      "within1": 0.483,
+      "within2": 0.689
+     },
+     "OM": {
+      "bias": -1.47,
+      "mae": 2.43,
+      "n": 180,
+      "within1": 0.328,
+      "within2": 0.589
+     }
+    }
+   },
+   "low": {
+    "best": "ECMWF",
+    "sources": {
+     "ECMWF": {
+      "bias": -0.01,
+      "mae": 1.3,
+      "n": 180,
+      "within1": 0.639,
+      "within2": 0.844
+     },
+     "GEM": {
+      "bias": -5.01,
+      "mae": 5.04,
+      "n": 174,
+      "within1": 0.057,
+      "within2": 0.155
+     },
+     "GFS": {
+      "bias": 2.63,
+      "mae": 2.68,
+      "n": 180,
+      "within1": 0.3,
+      "within2": 0.467
+     },
+     "NWS": {
+      "bias": -0.58,
+      "mae": 1.33,
+      "n": 180,
+      "within1": 0.628,
+      "within2": 0.872
+     },
+     "OM": {
+      "bias": -4.18,
+      "mae": 4.19,
+      "n": 180,
+      "within1": 0.061,
+      "within2": 0.178
+     }
+    }
+   }
+  },
+  "KMDW": {
+   "high": {
+    "best": "NWS",
+    "sources": {
+     "ECMWF": {
+      "bias": -0.51,
+      "mae": 2.36,
+      "n": 180,
+      "within1": 0.344,
+      "within2": 0.578
+     },
+     "GEM": {
+      "bias": -2.51,
+      "mae": 3.21,
+      "n": 174,
+      "within1": 0.264,
+      "within2": 0.471
+     },
+     "GFS": {
+      "bias": 0.86,
+      "mae": 2.1,
+      "n": 180,
+      "within1": 0.428,
+      "within2": 0.7
+     },
+     "NWS": {
+      "bias": -0.26,
+      "mae": 1.94,
+      "n": 180,
+      "within1": 0.461,
+      "within2": 0.728
+     },
+     "OM": {
+      "bias": -0.04,
+      "mae": 2.51,
+      "n": 180,
+      "within1": 0.344,
+      "within2": 0.628
+     }
+    }
+   },
+   "low": {
+    "best": "ECMWF",
+    "sources": {
+     "ECMWF": {
+      "bias": -0.01,
+      "mae": 1.67,
+      "n": 180,
+      "within1": 0.544,
+      "within2": 0.756
+     },
+     "GEM": {
+      "bias": -1.21,
+      "mae": 2.27,
+      "n": 174,
+      "within1": 0.385,
+      "within2": 0.621
+     },
+     "GFS": {
+      "bias": 0.83,
+      "mae": 2.33,
+      "n": 180,
+      "within1": 0.417,
+      "within2": 0.644
+     },
+     "NWS": {
+      "bias": 0.84,
+      "mae": 2.52,
+      "n": 180,
+      "within1": 0.411,
+      "within2": 0.633
+     },
+     "OM": {
+      "bias": -1.89,
+      "mae": 2.22,
+      "n": 180,
+      "within1": 0.383,
+      "within2": 0.628
+     }
+    }
+   }
+  },
+  "KMIA": {
+   "high": {
+    "best": "NWS",
+    "sources": {
+     "ECMWF": {
+      "bias": -3.99,
+      "mae": 4.02,
+      "n": 178,
+      "within1": 0.067,
+      "within2": 0.202
+     },
+     "GEM": {
+      "bias": -2.23,
+      "mae": 2.67,
+      "n": 173,
+      "within1": 0.347,
+      "within2": 0.561
+     },
+     "GFS": {
+      "bias": 0.29,
+      "mae": 1.49,
+      "n": 178,
+      "within1": 0.629,
+      "within2": 0.792
+     },
+     "NWS": {
+      "bias": -0.7,
+      "mae": 1.45,
+      "n": 178,
+      "within1": 0.579,
+      "within2": 0.848
+     },
+     "OM": {
+      "bias": -2.48,
+      "mae": 2.71,
+      "n": 178,
+      "within1": 0.298,
+      "within2": 0.545
+     }
+    }
+   },
+   "low": {
+    "best": "ECMWF",
+    "sources": {
+     "ECMWF": {
+      "bias": 0.13,
+      "mae": 1.45,
+      "n": 178,
+      "within1": 0.612,
+      "within2": 0.837
+     },
+     "GEM": {
+      "bias": 0.01,
+      "mae": 2.15,
+      "n": 173,
+      "within1": 0.451,
+      "within2": 0.659
+     },
+     "GFS": {
+      "bias": 3.66,
+      "mae": 3.76,
+      "n": 178,
+      "within1": 0.191,
+      "within2": 0.36
+     },
+     "NWS": {
+      "bias": 0.34,
+      "mae": 1.81,
+      "n": 178,
+      "within1": 0.517,
+      "within2": 0.736
+     },
+     "OM": {
+      "bias": -2.44,
+      "mae": 2.89,
+      "n": 178,
+      "within1": 0.253,
+      "within2": 0.461
+     }
+    }
+   }
+  },
+  "KMSP": {
+   "high": {
+    "best": "NWS",
+    "sources": {
+     "ECMWF": {
+      "bias": -1.13,
+      "mae": 2.75,
+      "n": 180,
+      "within1": 0.367,
+      "within2": 0.517
+     },
+     "GEM": {
+      "bias": -1.38,
+      "mae": 3.14,
+      "n": 174,
+      "within1": 0.293,
+      "within2": 0.483
+     },
+     "GFS": {
+      "bias": 0.99,
+      "mae": 3.35,
+      "n": 180,
+      "within1": 0.317,
+      "within2": 0.478
+     },
+     "NWS": {
+      "bias": 0.14,
+      "mae": 2.24,
+      "n": 180,
+      "within1": 0.428,
+      "within2": 0.65
+     },
+     "OM": {
+      "bias": -0.07,
+      "mae": 2.51,
+      "n": 180,
+      "within1": 0.339,
+      "within2": 0.578
+     }
+    }
+   },
+   "low": {
+    "best": "ECMWF",
+    "sources": {
+     "ECMWF": {
+      "bias": -0.45,
+      "mae": 1.79,
+      "n": 180,
+      "within1": 0.511,
+      "within2": 0.722
+     },
+     "GEM": {
+      "bias": -1.91,
+      "mae": 3.25,
+      "n": 174,
+      "within1": 0.299,
+      "within2": 0.5
+     },
+     "GFS": {
+      "bias": 0.13,
+      "mae": 2.45,
+      "n": 180,
+      "within1": 0.383,
+      "within2": 0.55
+     },
+     "NWS": {
+      "bias": -0.12,
+      "mae": 2.13,
+      "n": 180,
+      "within1": 0.439,
+      "within2": 0.689
+     },
+     "OM": {
+      "bias": -1.75,
+      "mae": 2.35,
+      "n": 180,
+      "within1": 0.361,
+      "within2": 0.6
+     }
+    }
+   }
+  },
+  "KMSY": {
+   "high": {
+    "best": "NWS",
+    "sources": {
+     "ECMWF": {
+      "bias": -2.59,
+      "mae": 3.01,
+      "n": 180,
+      "within1": 0.189,
+      "within2": 0.422
+     },
+     "GEM": {
+      "bias": -1.2,
+      "mae": 2.11,
+      "n": 174,
+      "within1": 0.397,
+      "within2": 0.69
+     },
+     "GFS": {
+      "bias": 2.33,
+      "mae": 3.04,
+      "n": 180,
+      "within1": 0.267,
+      "within2": 0.489
+     },
+     "NWS": {
+      "bias": 0.28,
+      "mae": 1.67,
+      "n": 180,
+      "within1": 0.55,
+      "within2": 0.811
+     },
+     "OM": {
+      "bias": -0.24,
+      "mae": 2.22,
+      "n": 180,
+      "within1": 0.4,
+      "within2": 0.628
+     }
+    }
+   },
+   "low": {
+    "best": "NWS",
+    "sources": {
+     "ECMWF": {
+      "bias": 1.88,
+      "mae": 2.05,
+      "n": 180,
+      "within1": 0.472,
+      "within2": 0.65
+     },
+     "GEM": {
+      "bias": 1.44,
+      "mae": 2.09,
+      "n": 174,
+      "within1": 0.506,
+      "within2": 0.667
+     },
+     "GFS": {
+      "bias": -1.49,
+      "mae": 2.28,
+      "n": 180,
+      "within1": 0.35,
+      "within2": 0.589
+     },
+     "NWS": {
+      "bias": 1.08,
+      "mae": 1.78,
+      "n": 180,
+      "within1": 0.556,
+      "within2": 0.75
+     },
+     "OM": {
+      "bias": -1.06,
+      "mae": 1.78,
+      "n": 180,
+      "within1": 0.5,
+      "within2": 0.739
+     }
+    }
+   }
+  },
+  "KNYC": {
+   "high": {
+    "best": "NWS",
+    "sources": {
+     "ECMWF": {
+      "bias": 1.0,
+      "mae": 2.53,
+      "n": 180,
+      "within1": 0.4,
+      "within2": 0.6
+     },
+     "GEM": {
+      "bias": -0.69,
+      "mae": 2.53,
+      "n": 175,
+      "within1": 0.423,
+      "within2": 0.651
+     },
+     "GFS": {
+      "bias": 2.98,
+      "mae": 3.82,
+      "n": 180,
+      "within1": 0.2,
+      "within2": 0.317
+     },
+     "NWS": {
+      "bias": 0.86,
+      "mae": 2.13,
+      "n": 180,
+      "within1": 0.4,
+      "within2": 0.639
+     },
+     "OM": {
+      "bias": 1.25,
+      "mae": 2.67,
+      "n": 180,
+      "within1": 0.35,
+      "within2": 0.561
+     }
+    }
+   },
+   "low": {
+    "best": "ECMWF",
+    "sources": {
+     "ECMWF": {
+      "bias": 0.1,
+      "mae": 1.76,
+      "n": 180,
+      "within1": 0.517,
+      "within2": 0.761
+     },
+     "GEM": {
+      "bias": -1.54,
+      "mae": 2.73,
+      "n": 175,
+      "within1": 0.434,
+      "within2": 0.611
+     },
+     "GFS": {
+      "bias": 1.36,
+      "mae": 2.08,
+      "n": 180,
+      "within1": 0.356,
+      "within2": 0.667
+     },
+     "NWS": {
+      "bias": 1.64,
+      "mae": 2.42,
+      "n": 180,
+      "within1": 0.5,
+      "within2": 0.644
+     },
+     "OM": {
+      "bias": -2.44,
+      "mae": 3.01,
+      "n": 180,
+      "within1": 0.272,
+      "within2": 0.456
+     }
+    }
+   }
+  },
+  "KOKC": {
+   "high": {
+    "best": "NWS",
+    "sources": {
+     "ECMWF": {
+      "bias": -1.14,
+      "mae": 2.76,
+      "n": 180,
+      "within1": 0.311,
+      "within2": 0.511
+     },
+     "GEM": {
+      "bias": -0.8,
+      "mae": 2.94,
+      "n": 174,
+      "within1": 0.328,
+      "within2": 0.557
+     },
+     "GFS": {
+      "bias": 1.7,
+      "mae": 3.5,
+      "n": 180,
+      "within1": 0.217,
+      "within2": 0.383
+     },
+     "NWS": {
+      "bias": -0.34,
+      "mae": 2.43,
+      "n": 180,
+      "within1": 0.417,
+      "within2": 0.578
+     },
+     "OM": {
+      "bias": 0.29,
+      "mae": 2.49,
+      "n": 180,
+      "within1": 0.344,
+      "within2": 0.556
+     }
+    }
+   },
+   "low": {
+    "best": "NWS",
+    "sources": {
+     "ECMWF": {
+      "bias": 3.94,
+      "mae": 4.41,
+      "n": 180,
+      "within1": 0.189,
+      "within2": 0.306
+     },
+     "GEM": {
+      "bias": 2.77,
+      "mae": 3.93,
+      "n": 174,
+      "within1": 0.282,
+      "within2": 0.397
+     },
+     "GFS": {
+      "bias": 0.98,
+      "mae": 2.77,
+      "n": 180,
+      "within1": 0.328,
+      "within2": 0.539
+     },
+     "NWS": {
+      "bias": 1.59,
+      "mae": 2.68,
+      "n": 180,
+      "within1": 0.372,
+      "within2": 0.583
+     },
+     "OM": {
+      "bias": 2.29,
+      "mae": 2.81,
+      "n": 180,
+      "within1": 0.317,
+      "within2": 0.533
+     }
+    }
+   }
+  },
+  "KPHL": {
+   "high": {
+    "best": "NWS",
+    "sources": {
+     "ECMWF": {
+      "bias": -1.96,
+      "mae": 2.62,
+      "n": 180,
+      "within1": 0.294,
+      "within2": 0.533
+     },
+     "GEM": {
+      "bias": -2.47,
+      "mae": 3.37,
+      "n": 175,
+      "within1": 0.309,
+      "within2": 0.503
+     },
+     "GFS": {
+      "bias": -0.63,
+      "mae": 2.31,
+      "n": 180,
+      "within1": 0.406,
+      "within2": 0.594
+     },
+     "NWS": {
+      "bias": -0.69,
+      "mae": 1.94,
+      "n": 180,
+      "within1": 0.467,
+      "within2": 0.706
+     },
+     "OM": {
+      "bias": -1.52,
+      "mae": 2.3,
+      "n": 180,
+      "within1": 0.4,
+      "within2": 0.644
+     }
+    }
+   },
+   "low": {
+    "best": "GFS",
+    "sources": {
+     "ECMWF": {
+      "bias": -1.89,
+      "mae": 2.47,
+      "n": 180,
+      "within1": 0.333,
+      "within2": 0.567
+     },
+     "GEM": {
+      "bias": -1.95,
+      "mae": 2.8,
+      "n": 175,
+      "within1": 0.349,
+      "within2": 0.509
+     },
+     "GFS": {
+      "bias": -0.52,
+      "mae": 1.87,
+      "n": 180,
+      "within1": 0.483,
+      "within2": 0.689
+     },
+     "NWS": {
+      "bias": -0.96,
+      "mae": 2.36,
+      "n": 180,
+      "within1": 0.4,
+      "within2": 0.611
+     },
+     "OM": {
+      "bias": -2.66,
+      "mae": 3.03,
+      "n": 180,
+      "within1": 0.25,
+      "within2": 0.433
+     }
+    }
+   }
+  },
+  "KPHX": {
+   "high": {
+    "best": "NWS",
+    "sources": {
+     "ECMWF": {
+      "bias": -1.41,
+      "mae": 1.83,
+      "n": 180,
+      "within1": 0.428,
+      "within2": 0.761
+     },
+     "GEM": {
+      "bias": -2.66,
+      "mae": 2.99,
+      "n": 174,
+      "within1": 0.224,
+      "within2": 0.437
+     },
+     "GFS": {
+      "bias": -1.98,
+      "mae": 2.42,
+      "n": 180,
+      "within1": 0.3,
+      "within2": 0.561
+     },
+     "NWS": {
+      "bias": 0.14,
+      "mae": 1.43,
+      "n": 180,
+      "within1": 0.65,
+      "within2": 0.822
+     },
+     "OM": {
+      "bias": -0.73,
+      "mae": 1.64,
+      "n": 180,
+      "within1": 0.561,
+      "within2": 0.767
+     }
+    }
+   },
+   "low": {
+    "best": "ECMWF",
+    "sources": {
+     "ECMWF": {
+      "bias": 0.61,
+      "mae": 1.97,
+      "n": 180,
+      "within1": 0.494,
+      "within2": 0.778
+     },
+     "GEM": {
+      "bias": -13.32,
+      "mae": 13.34,
+      "n": 174,
+      "within1": 0.04,
+      "within2": 0.052
+     },
+     "GFS": {
+      "bias": 3.89,
+      "mae": 4.42,
+      "n": 180,
+      "within1": 0.144,
+      "within2": 0.3
+     },
+     "NWS": {
+      "bias": -0.33,
+      "mae": 2.14,
+      "n": 180,
+      "within1": 0.461,
+      "within2": 0.656
+     },
+     "OM": {
+      "bias": -5.24,
+      "mae": 5.51,
+      "n": 180,
+      "within1": 0.072,
+      "within2": 0.156
+     }
+    }
+   }
+  },
+  "KSAN": {
+   "high": {
+    "best": "NWS",
+    "sources": {
+     "ECMWF": {
+      "bias": 7.23,
+      "mae": 7.3,
+      "n": 179,
+      "within1": 0.039,
+      "within2": 0.084
+     },
+     "GEM": {
+      "bias": 0.96,
+      "mae": 2.07,
+      "n": 173,
+      "within1": 0.399,
+      "within2": 0.665
+     },
+     "GFS": {
+      "bias": -1.1,
+      "mae": 1.85,
+      "n": 179,
+      "within1": 0.425,
+      "within2": 0.777
+     },
+     "NWS": {
+      "bias": 0.09,
+      "mae": 1.68,
+      "n": 179,
+      "within1": 0.564,
+      "within2": 0.777
+     },
+     "OM": {
+      "bias": -1.14,
+      "mae": 1.88,
+      "n": 179,
+      "within1": 0.453,
+      "within2": 0.749
+     }
+    }
+   },
+   "low": {
+    "best": "NWS",
+    "sources": {
+     "ECMWF": {
+      "bias": -1.59,
+      "mae": 2.18,
+      "n": 179,
+      "within1": 0.425,
+      "within2": 0.665
+     },
+     "GEM": {
+      "bias": -6.24,
+      "mae": 6.24,
+      "n": 173,
+      "within1": 0.012,
+      "within2": 0.052
+     },
+     "GFS": {
+      "bias": 1.59,
+      "mae": 1.92,
+      "n": 179,
+      "within1": 0.503,
+      "within2": 0.737
+     },
+     "NWS": {
+      "bias": -1.04,
+      "mae": 1.59,
+      "n": 179,
+      "within1": 0.57,
+      "within2": 0.771
+     },
+     "OM": {
+      "bias": -2.91,
+      "mae": 2.94,
+      "n": 179,
+      "within1": 0.173,
+      "within2": 0.425
+     }
+    }
+   }
+  },
+  "KSAT": {
+   "high": {
+    "best": "NWS",
+    "sources": {
+     "ECMWF": {
+      "bias": -1.19,
+      "mae": 2.21,
+      "n": 180,
+      "within1": 0.45,
+      "within2": 0.656
+     },
+     "GEM": {
+      "bias": -1.16,
+      "mae": 2.91,
+      "n": 174,
+      "within1": 0.345,
+      "within2": 0.552
+     },
+     "GFS": {
+      "bias": 0.69,
+      "mae": 2.29,
+      "n": 180,
+      "within1": 0.383,
+      "within2": 0.594
+     },
+     "NWS": {
+      "bias": 0.44,
+      "mae": 1.72,
+      "n": 180,
+      "within1": 0.583,
+      "within2": 0.75
+     },
+     "OM": {
+      "bias": -0.67,
+      "mae": 1.87,
+      "n": 180,
+      "within1": 0.517,
+      "within2": 0.711
+     }
+    }
+   },
+   "low": {
+    "best": "ECMWF",
+    "sources": {
+     "ECMWF": {
+      "bias": 0.06,
+      "mae": 2.01,
+      "n": 180,
+      "within1": 0.45,
+      "within2": 0.689
+     },
+     "GEM": {
+      "bias": -2.15,
+      "mae": 2.91,
+      "n": 174,
+      "within1": 0.23,
+      "within2": 0.46
+     },
+     "GFS": {
+      "bias": -0.42,
+      "mae": 2.29,
+      "n": 180,
+      "within1": 0.35,
+      "within2": 0.606
+     },
+     "NWS": {
+      "bias": 0.63,
+      "mae": 2.21,
+      "n": 180,
+      "within1": 0.489,
+      "within2": 0.761
+     },
+     "OM": {
+      "bias": -1.91,
+      "mae": 2.73,
+      "n": 180,
+      "within1": 0.278,
+      "within2": 0.472
+     }
+    }
+   }
+  },
+  "KSDF": {
+   "high": {
+    "best": "NWS",
+    "sources": {
+     "ECMWF": {
+      "bias": -1.21,
+      "mae": 2.37,
+      "n": 180,
+      "within1": 0.411,
+      "within2": 0.606
+     },
+     "GEM": {
+      "bias": -2.35,
+      "mae": 3.15,
+      "n": 175,
+      "within1": 0.314,
+      "within2": 0.491
+     },
+     "GFS": {
+      "bias": 0.12,
+      "mae": 3.15,
+      "n": 180,
+      "within1": 0.25,
+      "within2": 0.444
+     },
+     "NWS": {
+      "bias": 0.38,
+      "mae": 1.68,
+      "n": 180,
+      "within1": 0.6,
+      "within2": 0.8
+     },
+     "OM": {
+      "bias": 0.11,
+      "mae": 2.0,
+      "n": 180,
+      "within1": 0.528,
+      "within2": 0.694
+     }
+    }
+   },
+   "low": {
+    "best": "OM",
+    "sources": {
+     "ECMWF": {
+      "bias": 0.44,
+      "mae": 1.73,
+      "n": 180,
+      "within1": 0.522,
+      "within2": 0.75
+     },
+     "GEM": {
+      "bias": -1.41,
+      "mae": 2.5,
+      "n": 175,
+      "within1": 0.371,
+      "within2": 0.589
+     },
+     "GFS": {
+      "bias": -1.17,
+      "mae": 2.01,
+      "n": 180,
+      "within1": 0.478,
+      "within2": 0.661
+     },
+     "NWS": {
+      "bias": 0.25,
+      "mae": 2.06,
+      "n": 180,
+      "within1": 0.456,
+      "within2": 0.728
+     },
+     "OM": {
+      "bias": -0.42,
+      "mae": 1.71,
+      "n": 180,
+      "within1": 0.539,
+      "within2": 0.761
+     }
+    }
+   }
+  },
+  "KSEA": {
+   "high": {
+    "best": "NWS",
+    "sources": {
+     "ECMWF": {
+      "bias": -1.92,
+      "mae": 2.82,
+      "n": 180,
+      "within1": 0.289,
+      "within2": 0.494
+     },
+     "GEM": {
+      "bias": -2.47,
+      "mae": 3.52,
+      "n": 174,
+      "within1": 0.213,
+      "within2": 0.328
+     },
+     "GFS": {
+      "bias": 1.67,
+      "mae": 3.13,
+      "n": 180,
+      "within1": 0.317,
+      "within2": 0.511
+     },
+     "NWS": {
+      "bias": 0.03,
+      "mae": 2.23,
+      "n": 180,
+      "within1": 0.417,
+      "within2": 0.672
+     },
+     "OM": {
+      "bias": -1.08,
+      "mae": 2.61,
+      "n": 180,
+      "within1": 0.367,
+      "within2": 0.544
+     }
+    }
+   },
+   "low": {
+    "best": "NWS",
+    "sources": {
+     "ECMWF": {
+      "bias": 0.16,
+      "mae": 1.33,
+      "n": 180,
+      "within1": 0.606,
+      "within2": 0.872
+     },
+     "GEM": {
+      "bias": -2.13,
+      "mae": 2.55,
+      "n": 174,
+      "within1": 0.362,
+      "within2": 0.54
+     },
+     "GFS": {
+      "bias": -0.76,
+      "mae": 1.66,
+      "n": 180,
+      "within1": 0.522,
+      "within2": 0.761
+     },
+     "NWS": {
+      "bias": -0.12,
+      "mae": 1.33,
+      "n": 180,
+      "within1": 0.639,
+      "within2": 0.856
+     },
+     "OM": {
+      "bias": -0.73,
+      "mae": 1.77,
+      "n": 180,
+      "within1": 0.483,
+      "within2": 0.75
+     }
+    }
+   }
+  },
+  "KSFO": {
+   "high": {
+    "best": "NWS",
+    "sources": {
+     "ECMWF": {
+      "bias": -4.04,
+      "mae": 4.12,
+      "n": 180,
+      "within1": 0.15,
+      "within2": 0.256
+     },
+     "GEM": {
+      "bias": -5.68,
+      "mae": 5.71,
+      "n": 174,
+      "within1": 0.046,
+      "within2": 0.126
+     },
+     "GFS": {
+      "bias": -0.56,
+      "mae": 2.62,
+      "n": 180,
+      "within1": 0.317,
+      "within2": 0.533
+     },
+     "NWS": {
+      "bias": 0.54,
+      "mae": 2.43,
+      "n": 180,
+      "within1": 0.433,
+      "within2": 0.583
+     },
+     "OM": {
+      "bias": -0.91,
+      "mae": 3.2,
+      "n": 180,
+      "within1": 0.267,
+      "within2": 0.478
+     }
+    }
+   },
+   "low": {
+    "best": "NWS",
+    "sources": {
+     "ECMWF": {
+      "bias": -0.18,
+      "mae": 1.31,
+      "n": 180,
+      "within1": 0.661,
+      "within2": 0.867
+     },
+     "GEM": {
+      "bias": -0.05,
+      "mae": 1.26,
+      "n": 174,
+      "within1": 0.667,
+      "within2": 0.897
+     },
+     "GFS": {
+      "bias": 1.02,
+      "mae": 1.31,
+      "n": 180,
+      "within1": 0.672,
+      "within2": 0.844
+     },
+     "NWS": {
+      "bias": -0.11,
+      "mae": 1.2,
+      "n": 180,
+      "within1": 0.667,
+      "within2": 0.894
+     },
+     "OM": {
+      "bias": -2.38,
+      "mae": 2.59,
+      "n": 180,
+      "within1": 0.25,
+      "within2": 0.478
+     }
+    }
+   }
+  },
+  "KTTN": {
+   "high": {
+    "best": "NWS",
+    "sources": {
+     "ECMWF": {
+      "bias": -0.08,
+      "mae": 1.84,
+      "n": 180,
+      "within1": 0.483,
+      "within2": 0.728
+     },
+     "GEM": {
+      "bias": -0.83,
+      "mae": 2.68,
+      "n": 175,
+      "within1": 0.446,
+      "within2": 0.64
+     },
+     "GFS": {
+      "bias": 0.61,
+      "mae": 2.35,
+      "n": 180,
+      "within1": 0.356,
+      "within2": 0.6
+     },
+     "NWS": {
+      "bias": 0.72,
+      "mae": 1.77,
+      "n": 180,
+      "within1": 0.528,
+      "within2": 0.761
+     },
+     "OM": {
+      "bias": 0.12,
+      "mae": 2.01,
+      "n": 180,
+      "within1": 0.461,
+      "within2": 0.717
+     }
+    }
+   },
+   "low": {
+    "best": "OM",
+    "sources": {
+     "ECMWF": {
+      "bias": 2.06,
+      "mae": 2.33,
+      "n": 180,
+      "within1": 0.378,
+      "within2": 0.6
+     },
+     "GEM": {
+      "bias": 1.43,
+      "mae": 2.34,
+      "n": 175,
+      "within1": 0.434,
+      "within2": 0.669
+     },
+     "GFS": {
+      "bias": 1.26,
+      "mae": 2.26,
+      "n": 180,
+      "within1": 0.4,
+      "within2": 0.678
+     },
+     "NWS": {
+      "bias": 0.84,
+      "mae": 2.46,
+      "n": 180,
+      "within1": 0.4,
+      "within2": 0.617
+     },
+     "OM": {
+      "bias": 0.44,
+      "mae": 1.86,
+      "n": 180,
+      "within1": 0.489,
+      "within2": 0.75
+     }
+    }
+   }
+  }
+ },
+ "window": [
+  "2026-03-31",
+  "2026-09-26"
+ ]
+}

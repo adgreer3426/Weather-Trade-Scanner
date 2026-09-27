@@ -17,6 +17,11 @@ Weather sources:
 
   Distance column (Δ°) uses the mean of all non-None model values.
 
+  Hist acc column: the source with the lowest next-day error for that city
+  and contract type (high/low) over the last 180 days, its mean absolute
+  error, and how often it landed within ±1°F. Read from
+  data/forecast_accuracy.json, which forecast_accuracy.py rebuilds.
+
 Setup:
     pip install -r requirements.txt
     export KALSHI_API_KEY_ID="your-api-key-id"
@@ -43,9 +48,10 @@ import csv
 import os
 import re
 import sys
+import json
 import time
 from collections import defaultdict
-from datetime import date
+from datetime import date, datetime, timezone
 from urllib.parse import urlencode
 
 import requests
@@ -59,6 +65,9 @@ except ImportError:
     HAS_TABULATE = False
 
 API_PREFIX = "/trade-api/v2"
+ACCURACY_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)),
+                             "data", "forecast_accuracy.json")
+ACCURACY_STALE_DAYS = 14
 DEFAULT_BASE_URL = "https://api.elections.kalshi.com"
 DEMO_BASE_URL = "https://demo-api.kalshi.co"
 
@@ -505,6 +514,36 @@ def load_city_weather(city_code, cache, vc_key=None):
     return result
 
 
+def load_accuracy(path=ACCURACY_PATH):
+    """Return {station: {"high"|"low": {...}}} from forecast_accuracy.py output, or {}."""
+    try:
+        with open(path) as f:
+            data = json.load(f)
+    except (OSError, ValueError):
+        print(f"No forecast accuracy data at {path} — run forecast_accuracy.py "
+              "(Hist acc column will show N/A)", file=sys.stderr)
+        return {}
+    try:
+        generated = datetime.fromisoformat(data["generated"])
+        age = (datetime.now(timezone.utc) - generated).days
+        if age > ACCURACY_STALE_DAYS:
+            print(f"Forecast accuracy data is {age} days old — run forecast_accuracy.py",
+                  file=sys.stderr)
+    except (KeyError, ValueError):
+        pass
+    return data.get("stations", {})
+
+
+def historical_accuracy(accuracy, station, stype):
+    """Return (best_source, mae, within1) for a station/contract type, or Nones."""
+    kind = accuracy.get(station, {}).get(stype.lower(), {})
+    best = kind.get("best")
+    if not best:
+        return None, None, None
+    stats = kind["sources"][best]
+    return best, stats["mae"], stats["within1"]
+
+
 # ---------------------------------------------------------------------------
 # Scanning logic
 # ---------------------------------------------------------------------------
@@ -535,7 +574,8 @@ def find_extreme_rungs(markets, threshold):
     return hits
 
 
-def scan_series(client, series_ticker, threshold, dump_raw_flag, weather_cache, vc_key=None):
+def scan_series(client, series_ticker, threshold, dump_raw_flag, weather_cache, vc_key=None,
+                accuracy=None):
     """Return list of result row dicts for the current and next events."""
     markets = client.paginate(
         f"{API_PREFIX}/markets",
@@ -552,6 +592,9 @@ def scan_series(client, series_ticker, threshold, dump_raw_flag, weather_cache, 
     city_name = f"{city_info[0]} ({city_info[1]})" if city_info else city_code
     nws_data, om_data, om_models_data, vc_data = load_city_weather(
         city_code, weather_cache, vc_key=vc_key
+    )
+    hist_best, hist_mae, hist_within1 = historical_accuracy(
+        accuracy or {}, city_info[1] if city_info else None, stype
     )
 
     by_event = defaultdict(list)
@@ -632,6 +675,9 @@ def scan_series(client, series_ticker, threshold, dump_raw_flag, weather_cache, 
                 "precip_pct": precip,
                 "dist":       dist,
                 "inside":     ",".join(inside),
+                "hist_best":         hist_best,
+                "hist_best_mae":     hist_mae,
+                "hist_best_within1": hist_within1,
                 "ticker":     market.get("ticker", ""),
             })
     return rows
@@ -649,7 +695,7 @@ def render_table(rows):
     headers = [
         "City", "H/L", "Date", "Strike", "Pos", "Side",
         "Ask¢", "NWS°", "OM°", "ECMWF°", "GFS°", "GEM°", "VC°",
-        "Rain%", "Δ° (avg)", "In rung", "Ticker",
+        "Rain%", "Δ° (avg)", "In rung", "Hist acc", "Ticker",
     ]
     table = [
         [
@@ -669,6 +715,8 @@ def render_table(rows):
             _fmt(r["precip_pct"], "{}%"),
             _fmt(r["dist"],       "{}°"),
             f"⚠ {r['inside']}" if r["inside"] else "",
+            (f"{r['hist_best']} {r['hist_best_mae']:.1f}° {r['hist_best_within1']:.0%}"
+             if r["hist_best"] else "N/A"),
             r["ticker"],
         ]
         for r in rows
@@ -751,12 +799,14 @@ def main():
 
     print(f"Scanning {len(series_tickers)} weather series: {', '.join(series_tickers)}", file=sys.stderr)
 
+    accuracy = load_accuracy()
     weather_cache = {}
     dump_raw_flag = [args.dump_raw]
     all_rows = []
     for series_ticker in series_tickers:
         rows = scan_series(
-            client, series_ticker, args.threshold, dump_raw_flag, weather_cache, vc_key=vc_key
+            client, series_ticker, args.threshold, dump_raw_flag, weather_cache, vc_key=vc_key,
+            accuracy=accuracy,
         )
         all_rows.extend(rows)
 
@@ -783,7 +833,8 @@ def main():
         csv_fields = [
             "city", "type", "date", "strike", "position", "side",
             "ask_cents", "nws_f", "om_f", "ecmwf_f", "gfs_f", "gem_f", "vc_f",
-            "precip_pct", "dist", "inside", "ticker",
+            "precip_pct", "dist", "inside",
+            "hist_best", "hist_best_mae", "hist_best_within1", "ticker",
         ]
         with open(args.csv, "w", newline="") as f:
             writer = csv.DictWriter(f, fieldnames=csv_fields, extrasaction="ignore")
