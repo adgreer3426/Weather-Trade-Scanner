@@ -450,14 +450,16 @@ def fetch_nws(lat, lon):
 
         if dt not in result:
             result[dt] = {}
-        if is_day and "high_f" not in result[dt]:
-            result[dt]["high_f"] = temp
-            if prob is not None:
-                result[dt].setdefault("precip_pct", prob)
-        elif not is_day and "low_f" not in result[dt]:
-            result[dt]["low_f"] = temp
-            if prob is not None:
-                result[dt].setdefault("precip_pct", prob)
+        if prob is not None:
+            result[dt].setdefault("precip_pct", prob)
+        if is_day:
+            result[dt].setdefault("high_f", temp)
+        else:
+            # A night period's low occurs near dawn, so it belongs to the date
+            # the period ends on ("Tonight" 6pm D -> 6am D+1 is D+1's low),
+            # matching Kalshi's midnight-to-midnight climate day.
+            low_dt = (p.get("endTime") or "")[:10] or dt
+            result.setdefault(low_dt, {}).setdefault("low_f", temp)
     return result
 
 
